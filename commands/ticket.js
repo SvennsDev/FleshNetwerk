@@ -4,7 +4,7 @@ module.exports = {
     permissions: [],
     description: "open a ticket!",
     async execute(message, args, client, Discord, discord) {
-      const channel = await message.guild.channels.create(`ticket: ${message.author.username}`);
+      const channel = await message.guild.channels.create(`tockiet: ${message.author.username}`);
       
       channel.setParent("853257122685911071");
   

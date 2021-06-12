@@ -115,6 +115,14 @@ client.on('message', message =>{
         client.commands.get('leden').execute(message, args, client, Discord);   
     } else if (command == 'poll'){
         client.commands.get('poll').execute(message, args, client, Discord);   
+    } else if (command == 'seks'){
+        client.commands.get('seks').execute(message, args, client, Discord);   
+    } else if (command == 'tosti'){
+        client.commands.get('tosti').execute(message, args, client, Discord); 
+    } else if (command == 'knolpower'){
+        client.commands.get('knolpower').execute(message, args, client, Discord);                   
+    } else if (command == 'sensatienazi'){
+        client.commands.get('sensatienazi').execute(message, args, client, Discord);                   
     } else if (command == 'close'){
         client.commands.get('close').execute(message, args, client, Discord);   
     }
