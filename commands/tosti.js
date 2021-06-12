@@ -10,8 +10,7 @@ module.exports = {
         var ledenEmbed = new Discord.MessageEmbed()
             .setTitle(`Tosti`)
             .setColor("#006eff")
-            .addField("Tosti's zijn altijd sad")
-            .addField("Net zoals @Sad Tosti#8649")
+            .addField("Tosti's zijn altijd sad", "Net zoals @Sad Tosti#8649")
             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
         message.channel.send(ledenEmbed);
     }
