@@ -10,7 +10,7 @@ module.exports = {
         var ledenEmbed = new Discord.MessageEmbed()
             .setTitle(`SensatieNazi`)
             .setColor("#006eff")
-            .addField("Hoi ik ben een nazi", "Wil je ook een nazi zijn wees cool!")
+            .setDescription("Hoi ik ben een nazi", "Wil je ook een nazi zijn wees cool!")
             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
         message.channel.send(ledenEmbed);
     }
