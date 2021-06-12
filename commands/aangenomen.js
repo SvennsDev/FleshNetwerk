@@ -16,13 +16,13 @@ module.exports = {
         var ledenEmbed = new Discord.MessageEmbed()
         .setTitle(`Aangenomen!`)
         .setColor("#00ff00")
-        .addField("Wie:", `${TicketUser}`, false)
+        .addField("Wie:", `${ticketUser}`, false)
         .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
         
         message.channel.send(ledenEmbed);
         message.bulkDelete(1);
-        message.channel.setTopic(`**Sollicitant**: ${TicketUser} **Status**: Aangenomen`);
-        message.channel.setName(`aangenomen-${TicketUser}`);
+        message.channel.setTopic(`**Sollicitant**: ${ticketUser} **Status**: Aangenomen`);
+        message.channel.setName(`aangenomen-${ticketUser}`);
         
     }
 
