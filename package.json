@@ -1,7 +1,7 @@
 {
-  "name": "wolfiebot",
+  "name": "forumvoordemocratie",
   "version": "1.0.0",
-  "description": "WolfieBot",
+  "description": "ForumVoorDemocratie",
   "main": "index.js",
   "dependencies": {
     "dateformat": "^4.5.1",
@@ -21,10 +21,10 @@
     "start": "nodemon"
   },
   "keywords": [
-    "WolfieBot",
+    "ForumVoorDemocratie",
     "DiscordBot",
-    "WolfPlaza"
+    "Democratie"
   ],
-  "author": "GewoonxSven",
+  "author": "KnobbelPower",
   "license": "ISC"
 }
