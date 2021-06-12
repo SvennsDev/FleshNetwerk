@@ -134,7 +134,9 @@ client.on('message', message =>{
     } else if (command == 'apply'){
         client.commands.get('apply').execute(message, args, client, Discord);     
     } else if (command == 'aangenomen'){
-        client.commands.get('aangenomen').execute(message, args, client, Discord);                   
+        client.commands.get('aangenomen').execute(message, args, client, Discord);         
+    } else if (command == 'afwijzen'){
+        client.commands.get('afwijzen').execute(message, args, client, Discord);                   
     } else if (command == 'close'){
         client.commands.get('close').execute(message, args, client, Discord);   
     }

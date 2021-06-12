@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'aangenomen',
+    name: 'afwijzen',
     description: "This command kicks a member!",
     async execute(message, args, client, Discord, discord){
 
@@ -13,14 +13,14 @@ module.exports = {
         if (!ticketUser) return message.reply("Geen een persoon op") && message.delete();
 
         var ledenEmbed = new Discord.MessageEmbed()
-        .setTitle(`Aangenomen!`)
+        .setTitle(`Afgewezen!`)
         .setColor("#00ff00")
         .addField("Wie:", `${ticketUser}`, false)
         .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
         
         message.channel.send(ledenEmbed);
         message.channel.bulkDelete(1);
-        message.channel.setTopic(`**Sollicitant**: ${ticketUser} **Status**: Aangenomen`);
+        message.channel.setTopic(`**Sollicitant**: ${ticketUser} **Status**: Afgewezen`);
         
     }
 
