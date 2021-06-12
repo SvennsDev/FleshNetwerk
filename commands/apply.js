@@ -22,7 +22,7 @@ module.exports = {
         
         if (ticket) return;
 
-        var embed = new.discord.MessageEmbed()
+        var embed = new Discord.MessageEmbed()
             .setTitle(`Sollicitatie`)
             .setColor("#006eff")
             .addField("Hallo ", '${member.user.username}', "Uw sollicitatie ticket word aangemaakt!")
@@ -57,67 +57,67 @@ module.exports = {
                         }
                         )
 
-                        var embedParent = new.discord.MessageEmbed()
+                        var embedParent = new Discord.MessageEmbed()
                             .setTitle(`Sollicitatie`)
                             .setColor("#006eff")
                             .addField("Hallo ", '${member.user.username}', "Vul de vragen in om te solliciteren!")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
 
-                        var vraag1 = new.discord.MessageEmbed()
+                        var vraag1 = new Discord.MessageEmbed()
                             .setTitle('Vraag 1')
                             .setColor("#006eff")
                             .setDescription("Wat is je discord naam?")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
 
-                        var vraag2 = new.discord.MessageEmbed()
+                        var vraag2 = new Discord.MessageEmbed()
                             .setTitle('Vraag 2')
                             .setColor("#006eff")
                             .setDescription("Je volledige naam")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
                         
-                        var vraag3 = new.discord.MessageEmbed()
+                        var vraag3 = new Discord.MessageEmbed()
                             .setTitle('Vraag 3')
                             .setColor("#006eff")
                             .setDescription("Je geboorte datum?")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
 
-                        var vraag4 = new.discord.MessageEmbed()
+                        var vraag4 = new Discord.MessageEmbed()
                             .setTitle('Vraag 4')
                             .setColor("#006eff")
                             .setDescription("Je E-Mail adres")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
                         
-                        var vraag5 = new.discord.MessageEmbed()
+                        var vraag5 = new Discord.MessageEmbed()
                             .setTitle('Vraag 5')
                             .setColor("#006eff")
                             .setDescription("Stel jezelf voor")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
 
-                        var vraag6 = new.discord.MessageEmbed()
+                        var vraag6 = new Discord.MessageEmbed()
                             .setTitle('Vraag 6')
                             .setColor("#006eff")
                             .setDescription("Wat is je motivatie om staff te worden op deze server?")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
                         
-                        var vraag7 = new.discord.MessageEmbed()
+                        var vraag7 = new Discord.MessageEmbed()
                             .setTitle('Vraag 7')
                             .setColor("#006eff")
                             .setDescription("Waarom jij en niet iemand anders?")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
 
-                        var vraag8 = new.discord.MessageEmbed()
+                        var vraag8 = new Discord.MessageEmbed()
                             .setTitle('Vraag 8')
                             .setColor("#006eff")
                             .setDescription("Ervaring met andere Discord / Minecraft servers")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
                         
-                        var vraag9 = new.discord.MessageEmbed()
+                        var vraag9 = new Discord.MessageEmbed()
                             .setTitle('Vraag 9')
                             .setColor("#006eff")
                             .setDescription("Je pluspunten")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
                         
-                        var vraag10 = new.discord.MessageEmbed()
+                        var vraag10 = new Discord.MessageEmbed()
                             .setTitle('Vraag 10')
                             .setColor("#006eff")
                             .setDescription("Je minpunten")
