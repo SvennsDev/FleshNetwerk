@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'ping',
+    name: 'apply',
     description: "Ping command!",
     execute(message, args, client, Discord, discord) {
         
