@@ -18,7 +18,7 @@ for(const file of commandFiles){
 client.once('ready', () => {
     console.log('DEMOCRATIE!!! is online!');
 
-    client.user.setActivity("met mika's zijn dilo", { type: "PLAYING" });
+    client.user.setActivity("met mika's zijn dollo", { type: "PLAYING" });
 });
 
 // var swearWords = ["koe", "kalf", "varken"];
