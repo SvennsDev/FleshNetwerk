@@ -13,7 +13,7 @@ module.exports = {
         
         message.guild.channels.cache.forEach(channel => {
             
-            if(channel.name.toLowerCase() === channelname()){
+            if(channel.name.toLowerCase() === channelname.toLowerCase()) {
                 ticket = true;
                 return message.reply("Je hebt al een sollicitatie channel.").then(msg => msg.delete({timeout: 3000 }));
             }
