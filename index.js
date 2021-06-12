@@ -133,8 +133,8 @@ client.on('message', message =>{
         client.commands.get('josti').execute(message, args, client, Discord);           
     } else if (command == 'apply'){
         client.commands.get('apply').execute(message, args, client, Discord);     
-    } else if (command == 'uitslag'){
-        client.commands.get('uitslag').execute(message, args, client, Discord);                   
+    } else if (command == 'aangenomen'){
+        client.commands.get('aangenomen').execute(message, args, client, Discord);                   
     } else if (command == 'close'){
         client.commands.get('close').execute(message, args, client, Discord);   
     }
