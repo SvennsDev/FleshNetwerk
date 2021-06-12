@@ -25,7 +25,7 @@ module.exports = {
         var embed = new Discord.MessageEmbed()
             .setTitle(`Sollicitatie`)
             .setColor("#006eff")
-            .addField("Hallo ", '${member.user.username}', "Uw sollicitatie ticket word aangemaakt!")
+            .setDescription('Hallo ${message.author.username},Uw sollicitatie ticket word aangemaakt!')
             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
 
         message.channel.send(embed).then(msg => msg.delete({timeout: 3000 }));
@@ -60,7 +60,7 @@ module.exports = {
                         var embedParent = new Discord.MessageEmbed()
                             .setTitle(`Sollicitatie`)
                             .setColor("#006eff")
-                            .addField("Hallo ", '${member.user.username}', "Vul de vragen in om te solliciteren!")
+                            .addField("Hallo ", '${message.author.username}', "Vul de vragen in om te solliciteren!")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
 
                         var vraag1 = new Discord.MessageEmbed()
@@ -123,7 +123,6 @@ module.exports = {
                             .setDescription("Je minpunten")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
 
-                        settedParent.send(message.author.id);
                         settedParent.send(embedParent);
                         settedParent.send(vraag1);
 
@@ -170,10 +169,11 @@ module.exports = {
                                                                 var uitkomst = new Discord.MessageEmbed()
                                                                     .setTitle("Bedankt voor het invullen")
                                                                     .setColor("#006eff")
+                                                                    .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif")
                                                                     .setTimestamp()
                                                                     .setDescription(`**Vraag 1:** \n${antwoord1}\n\n**Vraag 2:** \n${antwoord2}\n\n**Vraag 3:** \n${antwoord3}\n\n**Vraag 4:** \n${antwoord4}\n\n**Vraag 5:** \n${antwoord5}\n\n**Vraag 6:** \n${antwoord6}\n\n**Vraag 7:** \n${antwoord7}\n\n**Vraag 8:** \n${antwoord8}\n\n**Vraag 9:** \n${antwoord9}\n\n**Vraag 10:** \n${antwoord10}\n\n`);
 
-                                                                settedParent.bulkDelete(20).then(
+                                                                settedParent.bulkDelete(21).then(
                                                                     settedParent.send(uitkomst)
                                                                 )
                                                             })    
