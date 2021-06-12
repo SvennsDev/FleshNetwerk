@@ -14,7 +14,7 @@ module.exports = {
 
         var ledenEmbed = new Discord.MessageEmbed()
         .setTitle(`Afgewezen!`)
-        .setColor("#00ff00")
+        .setColor("#ff0000")
         .addField("Wie:", `${ticketUser}`, false)
         .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
         
