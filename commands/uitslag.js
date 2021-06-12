@@ -38,7 +38,7 @@ module.exports = {
 
                 message.channel.send(redenEmbed).then(msg => msg.delete({timeout: 10000 }));
 
-                message.channel.awaitMessage(filter, {max:1, time: 10000}).then(collected => {
+                message.channel.awaitMessage(filter, {max:1, time: 10000 }).then(collected => {
 
                     var redenGood = collected.first();
 
