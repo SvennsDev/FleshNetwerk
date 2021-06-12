@@ -4,7 +4,7 @@ module.exports = {
     async execute(message, args, client, Discord, discord){
 
         var categoryID = "853257122685911071";
-
+        var person = message.author;
         var ticketUser = message.guild.member(message.mentions.users.first())
 
         if (message.channel.parentID !== categoryID) return message.reply("Oeps, dit is geen sollicitatie ticket.") && message.delete();
@@ -22,7 +22,7 @@ module.exports = {
         message.channel.send(ledenEmbed);
         message.channel.bulkDelete(1);
         message.channel.setTopic(`**Sollicitant**: ${ticketUser} **Status**: Aangenomen`);
-        message.channel.setName(`aangenomen-${ticketUser}`);
+        message.channel.setName(`aangenomen-${person}`);
         
     }
 
