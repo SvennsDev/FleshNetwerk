@@ -12,7 +12,7 @@ module.exports = {
         SEND_MESSAGE: false,
         VIEW_CHANNEL: false,
       });
-      channel.updateOverwrite(message.guild.roles.cache.find(x => x.name === 'Support'), {
+      channel.updateOverwrite(message.guild.roles.cache.find(x => x.name === 'Homo Wout | 👮'), {
         SEND_MESSAGE: true,
         VIEW_CHANNEL: true,
         CREATE_INSTANT_INVITE: false,
