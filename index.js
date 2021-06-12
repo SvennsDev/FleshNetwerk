@@ -16,9 +16,9 @@ for(const file of commandFiles){
  
  
 client.once('ready', () => {
-    console.log('WolfieBot is online!');
+    console.log('DEMOCRATIE!!! is online!');
 
-    client.user.setActivity("Play.WolfPlaza.nl", { type: "PLAYING" });
+    client.user.setActivity("GriepTiefus", { type: "PLAYING" });
 });
 
 // var swearWords = ["koe", "kalf", "varken"];
