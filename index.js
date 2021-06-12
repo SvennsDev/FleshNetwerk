@@ -128,7 +128,9 @@ client.on('message', message =>{
     } else if (command == 'bron'){
         client.commands.get('bron').execute(message, args, client, Discord);    
     } else if (command == 'marcus'){
-        client.commands.get('marcus').execute(message, args, client, Discord);                   
+        client.commands.get('marcus').execute(message, args, client, Discord);         
+    } else if (command == 'josti'){
+        client.commands.get('josti').execute(message, args, client, Discord);                   
     } else if (command == 'close'){
         client.commands.get('close').execute(message, args, client, Discord);   
     }

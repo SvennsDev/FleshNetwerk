@@ -13,7 +13,7 @@ module.exports = {
          var textB = new Discord.MessageEmbed()
          .setTitle(`__Staff__`)
          .setColor("#007bff")
-         .setDescription("!announcement - Stuur een annoucement \n !ban - Ban iemand \n !clear - Verwijder berichten \n !kick - Kick een member. \n !giveaway - Maak een giveaway \n !marcus - Marcus")
+         .setDescription("!announcement - Stuur een annoucement \n !ban - Ban iemand \n !clear - Verwijder berichten \n !kick - Kick een member. \n !giveaway - Maak een giveaway \n !marcus - Marcus\n !josti - Josti tosti")
          .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
          
          message.author.send(textA);
