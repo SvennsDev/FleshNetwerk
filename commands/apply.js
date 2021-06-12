@@ -25,7 +25,7 @@ module.exports = {
         var embed = new Discord.MessageEmbed()
             .setTitle(`Sollicitatie`)
             .setColor("#006eff")
-            .setDescription('Hallo ${message.author.username},Uw sollicitatie ticket word aangemaakt!')
+            .setDescription(`Hallo ${message.author.username},Uw sollicitatie ticket word aangemaakt!`)
             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
 
         message.channel.send(embed).then(msg => msg.delete({timeout: 3000 }));
@@ -60,7 +60,7 @@ module.exports = {
                         var embedParent = new Discord.MessageEmbed()
                             .setTitle(`Sollicitatie`)
                             .setColor("#006eff")
-                            .addField("Hallo ", '${message.author.username}', "Vul de vragen in om te solliciteren!")
+                            .addField("Hallo ", `${message.author.username}`, "Vul de vragen in om te solliciteren!")
                             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
 
                         var vraag1 = new Discord.MessageEmbed()
