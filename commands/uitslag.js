@@ -87,7 +87,7 @@ module.exports = {
         
         const filter = (reaction, user) => reactions.includes(reaction.emoji.name) && user.id === author.id;
 
-        return message.awaitReactions(filter, { max: 1, time: time }).then(collected => collected.first() && collected.first.emoji.name);
+        return message.awaitReactions(filter, { max: 1, time: time }).then(collected => collected.first() && collected.first().emoji.name);
     }
     
     }
