@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'knolpower',
+    name: 'sensatienazi',
     description: "This command kicks a member!",
     execute(message, args, client, Discord, discord){
         var ledenTotal = message.guild.memberCount;
@@ -8,10 +8,9 @@ module.exports = {
         var online = message.guild.members.cache.filter(m => m.user.presence.status == "online" || m.user.presence.status == "dnd" || m.user.presence.status == "idle").size;
     
         var ledenEmbed = new Discord.MessageEmbed()
-            .setTitle(`KNOLPOWER!`)
+            .setTitle(`SensatieNazi`)
             .setColor("#006eff")
-            .addField("GA NU NAAR")
-            .addField("https://www.knolpower.nl VOOR DE BESTE KNOLPOWER KLEDING")
+            .addField("Hoi ik ben een nazi")
             .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
         message.channel.send(ledenEmbed);
     }
