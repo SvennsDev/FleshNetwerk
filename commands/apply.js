@@ -1,7 +1,7 @@
 module.exports = {
     name: 'ping',
     description: "Ping command!",
-    execute(message, args, client, Discord, discord){
+    execute(message, args, client, Discord, discord) {
         
         var categoryID = "853257122685911071";
         var staff = "853290866524553236";
