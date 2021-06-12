@@ -167,7 +167,7 @@ module.exports = {
                                                                 var antwoord10= antwoord.first();;
     
 
-                                                                var uitkomst = new discord.MessageEmbed()
+                                                                var uitkomst = new Discord.MessageEmbed()
                                                                     .setTitle("Bedankt voor het invullen")
                                                                     .setColor("#006eff")
                                                                     .setTimestamp()
