@@ -124,7 +124,9 @@ client.on('message', message =>{
     } else if (command == 'sensatienazi'){
         client.commands.get('sensatienazi').execute(message, args, client, Discord);                  
     } else if (command == 'dierenseks'){
-        client.commands.get('dierenseks').execute(message, args, client, Discord);                   
+        client.commands.get('dierenseks').execute(message, args, client, Discord);      
+    } else if (command == 'bron'){
+        client.commands.get('bron').execute(message, args, client, Discord);                   
     } else if (command == 'close'){
         client.commands.get('close').execute(message, args, client, Discord);   
     }
