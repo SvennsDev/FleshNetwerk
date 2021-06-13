@@ -12,7 +12,7 @@ module.exports = {
         SEND_MESSAGE: false,
         VIEW_CHANNEL: false,
       });
-      channel.updateOverwrite(message.guild.roles.cache.find(x => x.name === 'Homo Wout | 👮'), {
+      channel.updateOverwrite(message.guild.roles.cache.find(x => x.name === 'Wout | 👮'), {
         SEND_MESSAGE: true,
         VIEW_CHANNEL: true,
         CREATE_INSTANT_INVITE: false,
@@ -24,7 +24,7 @@ module.exports = {
       });
 
       var TicketCreate = new Discord.MessageEmbed()
-        .setTitle(`Hallo ${message.author.username},`)
+        .setTitle(`Hallo ${message.author.nickname},`)
         .setDescription('Onze staffleden zullen u zo snel mogelijk voorzien van support. \n Wil je je ticket sluiten type **!close**.')
         .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
 
