@@ -21,12 +21,6 @@ client.once('ready', () => {
     client.user.setActivity("met mika zijn dollo", { type: "PLAYING" });
 });
 
-client.on('guildMemberAdd', member =>{
-    let embed = new Discord.RichEmbed()
-        .setDescription(':tada: **' + member.user.username + '** joined ' + member.guild.name)
-        .setFooter('We are now ' + member.guild.memberCount)
-    member.guild.channels.get('847041986435350578').send(embed)
-});
 // var swearWords = ["koe", "kalf", "varken"];
 
 client.on("message", async message => {
