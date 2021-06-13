@@ -28,7 +28,7 @@ module.exports = {
         case "⛔":
           message.channel.send("Deleting this channel in 5 seconds!");
           setTimeout(() => message.channel.delete(), 5000);
-          message.reactions.remove(user)
+          message.reactions.remove()
           break;
       }
     });
