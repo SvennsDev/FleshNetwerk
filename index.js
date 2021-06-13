@@ -21,16 +21,12 @@ client.once('ready', () => {
     client.user.setActivity("met mika zijn dollo", { type: "PLAYING" });
 });
 
-client.on('guildMemberAdd', member => {
-    const exampleEmbed = new Discord.MessageEmbed()
-        .setColor('#006eff')
-        .setTitle('Welkom!')
-        .addField('Hee joh gekkie!', member.nickname)
-        .setImage(member.user.avatarURL)
-        .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
-
-    member.guild.channels.get('847041986435350578').send(exampleEmbed);
-})
+client.on('guildMemberAdd', member =>{
+    let embed = new Discord.RichEmbed()
+        .setDescription(':tada: **' + member.user.username + '** joined ' + member.guild.name)
+        .setFooter('We are now ' + member.guild.memberCount)
+    member.guild.channels.get('847041986435350578').send(embed)
+});
 // var swearWords = ["koe", "kalf", "varken"];
 
 client.on("message", async message => {
