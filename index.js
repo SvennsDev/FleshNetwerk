@@ -138,7 +138,9 @@ client.on('message', message =>{
     } else if (command == 'afwijzen'){
         client.commands.get('afwijzen').execute(message, args, client, Discord);  
     } else if (command == 'tickettest'){
-        client.commands.get('tickettest').execute(message, args, client, Discord);                   
+        client.commands.get('tickettest').execute(message, args, client, Discord);      
+    } else if (command == 'closetest'){
+        client.commands.get('closetest').execute(message, args, client, Discord);                   
     } else if (command == 'close'){
         client.commands.get('close').execute(message, args, client, Discord);   
     }
