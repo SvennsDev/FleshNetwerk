@@ -23,14 +23,14 @@ client.once('ready', () => {
 
 client.on('guildMemberAdd', guildMember =>{
     let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'Lit | 💡');
-
-    guildMember.roles.add(welcomeRole);
-    guildMember.guild.channels.cache.get('847041986435350578').send(Welcome)
     var Welcome = new Discord.MessageEmbed()
         .setTitle(`Welkom!`)
         .setColor("#006eff")
         .setDescription(`Hee joh gekkie! <@${guildMember.user.id}>, welkom bij, **Forum voor Democratie!**`)
         .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
+    guildMember.roles.add(welcomeRole);
+    guildMember.guild.channels.cache.get('847041986435350578').send(Welcome)
+
 });
 // var swearWords = ["koe", "kalf", "varken"];
 
