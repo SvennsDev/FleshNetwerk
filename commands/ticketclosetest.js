@@ -26,8 +26,9 @@ module.exports = {
           message.channel.updateOverwrite(message.author, { SEND_MESSAGES: false });
           break;
         case "⛔":
-          channel.send("Deleting this channel in 5 seconds!");
+          message.channel.send("Deleting this channel in 5 seconds!");
           setTimeout(() => message.channel.delete(), 5000);
+          message.reactions.remove(user)
           break;
       }
     });
