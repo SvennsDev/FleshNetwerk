@@ -25,14 +25,18 @@ module.exports = {
       (reaction, user) => message.guild.members.cache.find((member) => member.id === user.id).hasPermission("ADMINISTRATOR"),
       { dispose: true }
     );
-
+    var Sluitenover = new Discord.MessageEmbed()
+        .setTitle(`Sluiten`)
+        .setColor("#006eff")
+        .setDescription("Het ticket sluit over 5 secondes!")
+        .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
     collector.on("collect", (reaction, user) => {
       switch (reaction.emoji.name) {
         case "❌":
-          message.channel.bulkDelete(1);
+          message.channel.bulkDelete(2);
           break;
         case "✅":
-          message.channel.send("Het ticket sluit over 5 secondes!");
+          message.channel.send(Sluitenover);
           setTimeout(() => message.channel.delete(), 5000);
           break;
       }
