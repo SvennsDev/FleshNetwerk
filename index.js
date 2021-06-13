@@ -21,18 +21,15 @@ client.once('ready', () => {
     client.user.setActivity("met mika zijn dollo", { type: "PLAYING" });
 });
 
-client.on("guildMemberAdd", member =>{
-
-    var channel = member.guild.channels.cache.get('847041986435350578')
-
-    if (!channel) return;
-    const Welcome = new Discord.MessageEmbed()
-        .setTitle(`Welkom!`)
-        .setColor("#006eff")
-        .setDescription(`Hee joh gekkie! ${member}, welkom bij, **Forum voor Democratie!**`)
+client.on('guildMemberAdd', member => {
+    const exampleEmbed = new Discord.RichEmbed()
+        .setColor('#006eff')
+        .setTitle('Welkom!')
+        .addField('Hee joh gekkie!', member.nickname)
+        .setImage(member.user.avatarURL)
         .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
-    channel.send(Welcome);
 
+    member.guild.channels.get('847041986435350578').send(exampleEmbed);
 })
 // var swearWords = ["koe", "kalf", "varken"];
 
