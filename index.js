@@ -26,7 +26,7 @@ client.on("guildMemberAdd", member =>{
     var channel = member.guild.channels.cache.get('847041986435350578')
 
     if (!channel) return;
-    var Welcome = new Discord.MessageEmbed()
+    const Welcome = new Discord.MessageEmbed()
         .setTitle(`Welkom!`)
         .setColor("#006eff")
         .setDescription(`Hee joh gekkie! ${member}, welkom bij, **Forum voor Democratie!**`)
