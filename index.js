@@ -21,8 +21,8 @@ client.once('ready', () => {
     client.user.setActivity("met mika zijn dollo", { type: "PLAYING" });
 });
 
-bot.on('guildMemberAdd', member => {
-    const exampleEmbed = new Discord.RichEmbed()
+client.on('guildMemberAdd', member => {
+    const exampleEmbed = new Discord.MessageEmbed()
         .setColor('#006eff')
         .setTitle('Welkom!')
         .addField('Hee joh gekkie!', member.nickname)
