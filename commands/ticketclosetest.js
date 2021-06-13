@@ -5,7 +5,7 @@ module.exports = {
     description: "open a ticket!",
     async execute(message, args, client, Discord, discord) {
 
-    const reactionMessage = await channel.send("Thank you for contacting support!");
+    const reactionMessage = await message.channel.send("Thank you for contacting support!");
 
     try {
       await reactionMessage.react("🔒");
