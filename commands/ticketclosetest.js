@@ -4,12 +4,18 @@ module.exports = {
     permissions: [],
     description: "open a ticket!",
     async execute(message, args, client, Discord, discord) {
-
-    const reactionMessage = await message.channel.send("Thank you for contacting support!");
+    var DeleteTicket = new Discord.MessageEmbed()
+        .setTitle(`Sluiten`)
+        .setColor("#006eff")
+        .setDescription("Wil je het ticket sluiten?")
+        .addField("Ja!", "✅")
+        .addField("Nee!", "❌")
+        .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
+    const reactionMessage = await message.channel.send(DeleteTicket);
 
     try {
-      await reactionMessage.react("🔒");
-      await reactionMessage.react("⛔");
+      await reactionMessage.react("❌");
+      await reactionMessage.react("✅");
     } catch (err) {
       channel.send("Error sending emojis!");
       throw err;
@@ -22,13 +28,12 @@ module.exports = {
 
     collector.on("collect", (reaction, user) => {
       switch (reaction.emoji.name) {
-        case "🔒":
-          message.channel.updateOverwrite(message.author, { SEND_MESSAGES: false });
+        case "❌":
+          message.channel.bulkDelete(1);
           break;
-        case "⛔":
-          message.channel.send("Deleting this channel in 5 seconds!");
+        case "✅":
+          message.channel.send("Het ticket sluit over 5 secondes!");
           setTimeout(() => message.channel.delete(), 5000);
-          message.reactions.remove()
           break;
       }
     });
