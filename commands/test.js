@@ -3,12 +3,12 @@ module.exports = {
     description: "This command kicks a member!",
     execute(message, args, client, Discord, discord){
 
-        let btn = new bot.disbut.MessageButton()
-            .setStyle('red')
-            .setLabel('AMONGUS !!! SO SUS !!!!')
-            .setID('amogus');
-        let msg = await message.channel.send('Click for AMOGUS 😳', {
-            button: btn
-      });
+        let button = new disbut.MessageButton()
+        .setStyle('red')
+        .setLabel('My First Button!') 
+        .setID('click_to_function') 
+        .setDisabled();
+      
+      message.channel.send('Hey, i am powered by https://npmjs.com/discord-buttons', button);
     }
 }
