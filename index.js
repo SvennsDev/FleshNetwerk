@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const disbut = require('discord-buttons');
-disbut(client);
-
+require('discord-buttons')(client);
 const prefix = '!';
  
 const fs = require('fs');
