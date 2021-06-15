@@ -99,8 +99,8 @@ client.on('message', message =>{
         client.commands.get('suggestie').execute(message, args, client, Discord);
     } else if (command == 'kick'){
         client.commands.get('kick').execute(message, args, client, Discord);
-    } else if (command == 'ban'){
-        client.commands.get('ban').execute(message, args, client, Discord);
+    } else if (command == 'banf'){
+        client.commands.get('banf').execute(message, args, client, Discord);
     } else if (command == 'giveaway'){
         client.commands.get('giveaway').execute(message, args, client, Discord);
     } else if (command == 'avatar'){
