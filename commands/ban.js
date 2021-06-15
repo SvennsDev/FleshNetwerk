@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'bans',
+    name: 'ban',
     description: "This command kicks a member!",
     execute(message, args, client, Discord, discord){
         const target = message.mentions.users.first();
