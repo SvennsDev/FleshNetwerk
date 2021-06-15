@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args, client, Discord, discord){
 
         var ledenEmbed = new Discord.MessageEmbed()
-            .setTitle(`Tosti`)
+            .setTitle(`Tosti!`)
             .setColor("#006eff")
             .setDescription("Tosti's zijn altijd sad Net zoals @Sad Tosti#8649")
             .setThumbnail('https://cdn.discordapp.com/emojis/851919025306468382.png?v=1')
