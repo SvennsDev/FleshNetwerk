@@ -2,6 +2,7 @@ module.exports = {
     name: 'ban',
     description: "This command kicks a member!",
     execute(message, args, client, Discord, discord){
+        if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("Sorry jij kan dit niet");
         const target = message.mentions.users.first();
         if(target){
             const memberTarget = message.guild.members.cache.get(target.id);
