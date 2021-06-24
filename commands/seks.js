@@ -1,10 +1,7 @@
 module.exports = {
     name: 'seks',
     description: "This command kicks a member!",
-    async execute(message, args, client, Discord, discord){
-        var categoryID = "857671953347248138";
-
-        if (message.channel.parentID !== categoryID) return message.channel.bulkDelete(5);
+    execute(message, args, client, Discord, discord){
 
         var ledenEmbed = new Discord.MessageEmbed()
             .setTitle(`Seks?`)
