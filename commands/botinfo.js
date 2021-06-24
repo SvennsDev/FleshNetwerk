@@ -1,17 +1,47 @@
+const { MessageEmbed } = require('discord.js')
+const os = require('os')
 module.exports = {
-    name: 'botinfo',
-    description: "This command kicks a member!",
-    execute(message, args, client, Discord, discord){
-        var serverEmbed = new Discord.MessageEmbed()
-        .setTitle("DemoCratie Bot")
-        .setColor("#006eff")
-        .addField("BotInfo:", `discord.gg/stik`)
-        .addField(` **Naam**:`, `${client.user.username}`)
-        .addField(` **Versie**:`, `Pro`)
-        .addField(` **Ping:**`, `${message.createdTimestamp- Date.now()} ms`)
-        .addField(` **Developers:**`, `KnobbelPower`)
-        .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
-        
-    return message.channel.send(serverEmbed);
+    name: "botinfo",
+    category: "bot",
+    async execute(message, args, client, Discord, discord){
+        const embed = new MessageEmbed()
+            .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
+            .setTitle('Bot Stats')
+            .setColor('#000000')
+            .addFields(
+                {
+                    name: '🌐 Servers',
+                    value: `Serving ${client.guilds.cache.size} servers.`,
+                    inline: true
+                },
+                {
+                    name: '📺 Channels',
+                    value: `Serving ${client.channels.cache.size} channels.`,
+                    inline: true
+                },
+                {
+                    name: '👥 Server Users',
+                    value: `Serving ${client.users.cache.size}`,
+                    inline: true
+                },
+                {
+                    name: '⏳ Ping',
+                    value: `${Math.round(client.ws.ping)}ms`,
+                    inline: true
+                },
+                {
+                    name: 'Join Date',
+                    value: client.user.createdAt,
+                    inline: true
+                },
+                {
+                    name: 'Server Info',
+                    value: `Cores: ${os.cpus().length}`,
+                    inline: true
+                }
+            )
+            .setFooter(`Created By: xSvxnn#3634`)
+
+        await message.channel.send(embed)
     }
 }

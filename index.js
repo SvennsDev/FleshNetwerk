@@ -139,8 +139,10 @@ client.on('message', message =>{
         client.commands.get('aangenomen').execute(message, args, client, Discord);         
     } else if (command == 'afwijzen'){
         client.commands.get('afwijzen').execute(message, args, client, Discord);         
-    } else if (command == 'test'){
-        client.commands.get('test').execute(message, args, client, Discord);               
+    } else if (command == 'slowmode'){
+        client.commands.get('slowmode').execute(message, args, client, Discord);   
+    } else if (command == 'dog'){
+        client.commands.get('dog').execute(message, args, client, Discord);                       
     } else if (command == 'close'){
         client.commands.get('close').execute(message, args, client, Discord);   
     }
