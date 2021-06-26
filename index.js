@@ -146,7 +146,9 @@ client.on('message', message =>{
     } else if (command == 'test'){
         client.commands.get('test').execute(message, args, client, Discord);      
     } else if (command == 'cat'){
-        client.commands.get('cat').execute(message, args, client, Discord);                       
+        client.commands.get('cat').execute(message, args, client, Discord);      
+    } else if (command == 'reactionrole'){
+        client.commands.get('reactionrole').execute(message, args, client, Discord);                       
     } else if (command == 'close'){
         client.commands.get('close').execute(message, args, client, Discord);   
     }
