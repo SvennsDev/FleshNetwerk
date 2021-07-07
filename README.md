@@ -14,3 +14,6 @@
 | 15.0.0   | :x:                |
 | 14.0.0   | :x:                |
 | 13.0.0   | :x:                |
+
+##Voeg je bot aan je eigen server toe
+<div size='20px'>https://discord.com/api/oauth2/authorize?client_id=853254537963110410&permissions=8&scope=bot</div>
