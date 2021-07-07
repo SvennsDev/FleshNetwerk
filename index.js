@@ -154,7 +154,7 @@ client.on('message', message =>{
     }
 });
  
-client.login('ODUzMjU0NTM3OTYzMTEwNDEw.YMStNg.8tyuvGHqZWmCv_kbRyA-hDHBf8g');
+client.login('DISCORD-BOT-TOKEN');
  
  
 //----- Command JS File -----
