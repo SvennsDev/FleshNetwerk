@@ -21,28 +21,12 @@ client.once('ready', () => {
     client.user.setActivity("play.fleshnetwerk.nl", { type: "PLAYING" });
 });
 
-// var swearWords = ["koe", "kalf", "varken"];
 
 client.on("message", async message => {
 
     if (message.author.bot) return;
 
     if (message.channel.type === "dm") return;
-
-
-    // var msg = message.content.toLowerCase();
-
-    // for (let i = 0; i < swearWords["vloekwoorden"].length; i++) {
-
-    //     if (msg.includes(swearWords["vloekwoorden"][i])) {
-
-    //         message.delete();
-
-    //         return message.reply("Gelieve niet te vloeken").then(msg => msg.delete({ timeout: 3000 }));
-
-    //     }
-
-    // }
 
 
      var messageArray = message.content.split(" ");
