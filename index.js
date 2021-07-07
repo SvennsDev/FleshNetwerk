@@ -98,7 +98,9 @@ client.on('message', message =>{
     } else if (command == 'suggestie'){
         client.commands.get('suggestie').execute(message, args, client, Discord);
     } else if (command == 'serverstatus'){
-        client.commands.get('serverstatus').execute(message, args, client, Discord);        
+        client.commands.get('serverstatus').execute(message, args, client, Discord);     
+    } else if (command == 'applyegirl'){
+        client.commands.get('applyegirl').execute(message, args, client, Discord);                
     } else if (command == 'kick'){
         client.commands.get('kick').execute(message, args, client, Discord);
     } else if (command == 'ban'){
@@ -140,7 +142,7 @@ client.on('message', message =>{
     }
 });
  
-client.login('ODUzMjU0NTM3OTYzMTEwNDEw.YMStNg.8tyuvGHqZWmCv_kbRyA-hDHBf8g');
+client.login('DISCORD-BOT-TOKEN');
  
  
 //----- Command JS File -----
