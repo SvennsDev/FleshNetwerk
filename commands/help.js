@@ -8,13 +8,13 @@ module.exports = {
          .setColor("#007bff")
          .setDescription("\n")
          .addField("__Algemeen__", "!help - Geeft al de verschillende commands \n")
-         .addField("__Informatie__", "!avatar - Stuur je eigen avatar.\n !suggestie - Type een suggestie. \n !ping - Zie hoeveel ping de bot heeft \n !serverstatus - Stuur de server status.\n !ticket - Maak een ticket aan\n !botinfo - Stuur de informatie van de bot \n !serverinfo - Stuur alle server info\n !leden - Laat zien hoeveel leden er zijn\n !knolpower - Knolpower\n !seks - Heb seks met de beste e-girls\n !sensatienazi - Wees een nazie\n !tosti - Tosti\n !bron - Bron\n !dierenseks - Heb seks met dieren");
+         .addField("__Informatie__", "!avatar - Stuur je eigen avatar.\n !suggestie - Type een suggestie. \n !ping - Zie hoeveel ping de bot heeft \n !serverstatus - Stuur de server status.\n !ticket - Maak een ticket aan\n !botinfo - Stuur de informatie van de bot \n !serverinfo - Stuur alle server info\n !leden - Laat zien hoeveel leden er zijn\n !cat - Random foto van een kat\n !dog - Random foto van een hond");
          
          var textB = new Discord.MessageEmbed()
          .setTitle(`__Staff__`)
          .setColor("#007bff")
-         .setDescription("!announcement - Stuur een annoucement \n !ban - Ban iemand \n !clear - Verwijder berichten \n !kick - Kick een member. \n !giveaway - Maak een giveaway \n !marcus - Marcus\n !josti - Josti tosti")
-         .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
+         .setDescription("!announcement - Stuur een annoucement \n !ban - Ban iemand \n !clear - Verwijder berichten \n !kick - Kick een member. \n !giveaway - Maak een giveaway \n !slowmode - Zet een slowmode op de channel")
+         .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
          
          message.author.send(textA);
          message.author.send(textB);
@@ -23,7 +23,7 @@ module.exports = {
          .setTitle(`Help`)
          .setColor("#007bff")
          .setDescription("Alle help commands staan in je dm! :mailbox_with_mail:")
-         .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");
+         .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
          message.channel.send(reply);
      }

@@ -1,7 +1,7 @@
 {
-  "name": "forumvoordemocratie",
+  "name": "fleshnetwerk",
   "version": "1.0.0",
-  "description": "ForumVoorDemocratie",
+  "description": "fleshnetwerk",
   "main": "index.js",
   "dependencies": {
     "axios": "^0.21.1",
@@ -23,10 +23,9 @@
     "start": "nodemon"
   },
   "keywords": [
-    "ForumVoorDemocratie",
-    "DiscordBot",
-    "Democratie"
+    "fleshnetwerk",
+    "DiscordBot"
   ],
-  "author": "KnobbelPower",
+  "author": "xSvxnn",
   "license": "ISC"
 }

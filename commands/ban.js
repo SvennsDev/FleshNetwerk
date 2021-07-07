@@ -10,7 +10,7 @@ module.exports = {
                 .setTitle("User verbannen")
                 .setDescription(`**${memberTarget}** is verbannen!`)
                 .setTimestamp()
-                .setFooter("Copyright © | Forum voor Democratie 2021", "https://cdn.discordapp.com/attachments/807245844213530695/853254859268947968/ezgif-7-8d9d8c257f24.gif");    
+                .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");       
           var ticketChannel = message.member.guild.channels.cache.find(channel => channel.name === "🔒╹moderator-only");
           if (!ticketChannel) return message.reply("Kanaal bestaat niet");
           ticketChannel.send(embedCreateTicket);

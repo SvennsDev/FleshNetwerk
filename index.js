@@ -97,6 +97,8 @@ client.on('message', message =>{
         client.commands.get('ticket').execute(message, args, client, Discord);
     } else if (command == 'suggestie'){
         client.commands.get('suggestie').execute(message, args, client, Discord);
+    } else if (command == 'serverstatus'){
+        client.commands.get('serverstatus').execute(message, args, client, Discord);        
     } else if (command == 'kick'){
         client.commands.get('kick').execute(message, args, client, Discord);
     } else if (command == 'ban'){
@@ -116,23 +118,7 @@ client.on('message', message =>{
     } else if (command == 'leden'){
         client.commands.get('leden').execute(message, args, client, Discord);   
     } else if (command == 'poll'){
-        client.commands.get('poll').execute(message, args, client, Discord);   
-    } else if (command == 'seks'){
-        client.commands.get('seks').execute(message, args, client, Discord);   
-    } else if (command == 'tosti'){
-        client.commands.get('tosti').execute(message, args, client, Discord); 
-    } else if (command == 'knolpower'){
-        client.commands.get('knolpower').execute(message, args, client, Discord);                   
-    } else if (command == 'sensatienazi'){
-        client.commands.get('sensatienazi').execute(message, args, client, Discord);                  
-    } else if (command == 'dierenseks'){
-        client.commands.get('dierenseks').execute(message, args, client, Discord);      
-    } else if (command == 'bron'){
-        client.commands.get('bron').execute(message, args, client, Discord);    
-    } else if (command == 'marcus'){
-        client.commands.get('marcus').execute(message, args, client, Discord);         
-    } else if (command == 'josti'){
-        client.commands.get('josti').execute(message, args, client, Discord);           
+        client.commands.get('poll').execute(message, args, client, Discord);          
     } else if (command == 'apply'){
         client.commands.get('apply').execute(message, args, client, Discord);     
     } else if (command == 'aangenomen'){

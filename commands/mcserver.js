@@ -4,20 +4,20 @@ module.exports = {
     name: 'serverstatus',
     description: 'get information about a minecraft server',
     execute(client, message, args, Discord){
-        if(!args[0] === undefined) args[0] = "play.wolfplaza.nl";
-        if(!args[1] === undefined) args[1] = "25569";
+        if(!args[0] === undefined) args[0] = "play.fleshnetwerk.nl";
+        if(!args[1] === undefined) args[1] = "25400";
         
-        util.status('play.wolfplaza.nl', {port: parseInt('25569')}).then((response) =>{
+        util.status('play.fleshnetwerk.nl', {port: parseInt('25400')}).then((response) =>{
             console.log(response);
             const embed = new Discord.MessageEmbed()
             .setColor('#00ee00')
-            .setTitle('WolfPlaza Server Status')
+            .setTitle('FleshNetwerk Server Status')
             .addFields(
                 {name: 'Server IP', value: response.host},
                 {name: 'Online Spelers', value: response.onlinePlayers},
                 {name: 'Max Spelers', value: response.maxPlayers},
             )
-            .setFooter("Copyright © | WolfPlaza 2021", "https://images-ext-1.discordapp.net/external/085esAL70tOClTZIN-HsX7JU15iU1Z7k0rnW0eIEGTM/https/media.discordapp.net/attachments/802601154525528074/816816786946785300/WolfPlaza.png");
+            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
             message.channel.send(embed);
         })
