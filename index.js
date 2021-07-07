@@ -16,7 +16,10 @@ for(const file of commandFiles){
  
  
 client.once('ready', () => {
+    console.log('----------------------');
     console.log('FleshNetwerk bot is online!');
+    console.log('Made by: xSvxnn#3634!');    
+    console.log('----------------------');
 
     client.user.setActivity("play.fleshnetwerk.nl", { type: "PLAYING" });
 });
