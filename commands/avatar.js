@@ -12,7 +12,7 @@ module.exports = {
         .setTitle(`Avatar ${member.user.username}`)
         .setColor("#007bff")
         .setImage(member.user.displayAvatarURL({ dynamic: true, size: 4096}))
-        .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+        .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
     message.channel.send(embed);
     }

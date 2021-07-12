@@ -26,7 +26,7 @@ module.exports = {
             .setTitle(`Egirl Applicatie`)
             .setColor("#006eff")
             .setDescription(`Hallo ${message.author.username},Uw egirl applicatie ticket word aangemaakt!`)
-            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
         message.channel.send(embed).then(msg => msg.delete({timeout: 3000 }));
 
@@ -61,19 +61,19 @@ module.exports = {
                             .setTitle(`Egirl applicatie`)
                             .setColor("#006eff")
                             .addField("Hallo ", `${message.author.username}`, "Vul de vragen in om de egirl rank te ontvangen!")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
                         var vraag1 = new Discord.MessageEmbed()
                             .setTitle('Vraag 1')
                             .setColor("#006eff")
                             .setDescription("Wat is je discord naam?")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
                         var vraag2 = new Discord.MessageEmbed()
                             .setTitle('Vraag 2')
                             .setColor("#006eff")
                             .setDescription("Gender?")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
                         
                         var vraag3 = new Discord.MessageEmbed()
                             .setTitle('Vraag 3')

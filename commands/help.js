@@ -14,7 +14,7 @@ module.exports = {
          .setTitle(`__Staff__`)
          .setColor("#007bff")
          .setDescription("!announcement - Stuur een annoucement \n !ban - Ban iemand \n !clear - Verwijder berichten \n !kick - Kick een member. \n !giveaway - Maak een giveaway \n !slowmode - Zet een slowmode op de channel")
-         .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+         .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
          
          message.author.send(textA);
          message.author.send(textB);
@@ -23,7 +23,7 @@ module.exports = {
          .setTitle(`Help`)
          .setColor("#007bff")
          .setDescription("Alle help commands staan in je dm! :mailbox_with_mail:")
-         .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+         .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
          message.channel.send(reply);
      }

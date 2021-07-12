@@ -25,7 +25,7 @@ module.exports = {
             .setTitle(`Random foto van een hond`)
             .setColor(`#f3f3f3`)
             .setImage(image.link)
-            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");       
+            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");       
 
         await message.channel.send(embed)
     }

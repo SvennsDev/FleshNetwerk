@@ -26,7 +26,7 @@ module.exports = {
       var TicketCreate = new Discord.MessageEmbed()
         .setTitle(`Hallo ${message.author.username},`)
         .setDescription('Onze staffleden zullen u zo snel mogelijk voorzien van support. \n Wil je je ticket sluiten type **!close**.')
-        .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+        .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
       const reactionMessage = await channel.send(TicketCreate);
 
@@ -42,7 +42,7 @@ module.exports = {
       const TicketMessage = new Discord.MessageEmbed()
         .setTitle(`Hallo ${message.author.username},`)
         .setDescription(`Uw ticket is aangemaakt in ${channel}`)
-        .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+        .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
       message.channel
         .send(TicketMessage)

@@ -14,7 +14,7 @@ module.exports = {
         var embed = new Discord.MessageEmbed()
             .setTitle("Gebruik")
             .setDescription(`Maak een poll door gebruik te maken van: \n !poll titel ${seperator} bericht ${seperator} Emoji 1 ${seperator} Emoji 2`)
-            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
         return message.reply(embed);
 
@@ -39,7 +39,7 @@ module.exports = {
         .setColor('#007bff')
         .setDescription(`\n\n ${options.bericht} \n`)
         .setTimestamp()
-        .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+        .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
     var channel = message.member.guild.channels.cache.find(channels => channels.name === "🔒╹staff-chat");
     if (!channel) return message.reply("Dit kanaal bestaat niet");

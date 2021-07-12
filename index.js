@@ -123,7 +123,13 @@ client.on('message', message =>{
     } else if (command == 'cat'){
         client.commands.get('cat').execute(message, args, client, Discord);      
     } else if (command == 'reactionrole'){
-        client.commands.get('reactionrole').execute(message, args, client, Discord);                       
+        client.commands.get('reactionrole').execute(message, args, client, Discord);    
+    } else if (command == 'clear'){
+        client.commands.get('clear').execute(message, args, client, Discord);               
+    } else if (command == 'mute'){
+        client.commands.get('mute').execute(message, args, client, Discord);      
+    } else if (command == 'unmute'){
+        client.commands.get('unmute').execute(message, args, client, Discord);                                       
     } else if (command == 'close'){
         client.commands.get('close').execute(message, args, client, Discord);   
     }

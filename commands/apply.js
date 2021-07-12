@@ -26,7 +26,7 @@ module.exports = {
             .setTitle(`Sollicitatie`)
             .setColor("#006eff")
             .setDescription(`Hallo ${message.author.username},Uw sollicitatie ticket word aangemaakt!`)
-            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
         message.channel.send(embed).then(msg => msg.delete({timeout: 3000 }));
 
@@ -61,67 +61,67 @@ module.exports = {
                             .setTitle(`Sollicitatie`)
                             .setColor("#006eff")
                             .addField("Hallo ", `${message.author.username}`, "Vul de vragen in om te solliciteren!")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
                         var vraag1 = new Discord.MessageEmbed()
                             .setTitle('Vraag 1')
                             .setColor("#006eff")
                             .setDescription("Wat is je discord naam?")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
                         var vraag2 = new Discord.MessageEmbed()
                             .setTitle('Vraag 2')
                             .setColor("#006eff")
                             .setDescription("Je volledige naam")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
                         
                         var vraag3 = new Discord.MessageEmbed()
                             .setTitle('Vraag 3')
                             .setColor("#006eff")
                             .setDescription("Je geboorte datum?")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
                         var vraag4 = new Discord.MessageEmbed()
                             .setTitle('Vraag 4')
                             .setColor("#006eff")
                             .setDescription("Je E-Mail adres")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
                         
                         var vraag5 = new Discord.MessageEmbed()
                             .setTitle('Vraag 5')
                             .setColor("#006eff")
                             .setDescription("Stel jezelf voor")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
                         var vraag6 = new Discord.MessageEmbed()
                             .setTitle('Vraag 6')
                             .setColor("#006eff")
                             .setDescription("Wat is je motivatie om staff te worden op deze server?")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
                         
                         var vraag7 = new Discord.MessageEmbed()
                             .setTitle('Vraag 7')
                             .setColor("#006eff")
                             .setDescription("Waarom jij en niet iemand anders?")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
                         var vraag8 = new Discord.MessageEmbed()
                             .setTitle('Vraag 8')
                             .setColor("#006eff")
                             .setDescription("Ervaring met andere Discord / Minecraft servers")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
                         
                         var vraag9 = new Discord.MessageEmbed()
                             .setTitle('Vraag 9')
                             .setColor("#006eff")
                             .setDescription("Je pluspunten")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
                         
                         var vraag10 = new Discord.MessageEmbed()
                             .setTitle('Vraag 10')
                             .setColor("#006eff")
                             .setDescription("Je minpunten")
-                            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+                            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
                         settedParent.send(embedParent);
                         settedParent.send(vraag1);

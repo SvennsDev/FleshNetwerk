@@ -10,7 +10,7 @@ module.exports = {
         .setDescription("Wil je het ticket sluiten?")
         .addField("Ja!", "✅")
         .addField("Nee!", "❌")
-        .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+        .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
     const reactionMessage = await message.channel.send(DeleteTicket);
 
     try {
@@ -29,12 +29,12 @@ module.exports = {
         .setTitle("Ticket closed")
         .setDescription(`Het ticket **#${message.channel.name}** is gesloten`)
         .setTimestamp()
-        .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+        .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
     var Sluitenover = new Discord.MessageEmbed()
         .setTitle(`Sluiten`)
         .setColor("#006eff")
         .setDescription("Het ticket sluit over 5 secondes!")
-        .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+        .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
     collector.on("collect", (reaction, user) => {
       switch (reaction.emoji.name) {
         case "❌":

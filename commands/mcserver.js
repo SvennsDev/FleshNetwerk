@@ -3,7 +3,7 @@ const util = require('minecraft-server-util');
 module.exports = {
     name: 'serverstatus',
     description: 'get information about a minecraft server',
-    execute(client, message, args, Discord){
+    execute(message, args, client, Discord){
         if(!args[0] === undefined) args[0] = "play.fleshnetwerk.nl";
         if(!args[1] === undefined) args[1] = "25400";
         
@@ -17,13 +17,9 @@ module.exports = {
                 {name: 'Online Spelers', value: response.onlinePlayers},
                 {name: 'Max Spelers', value: response.maxPlayers},
             )
-            .setFooter("Copyright © | FleshNetwerk 2021", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
+            .setFooter("| FleshNetwerk ", "https://cdn.discordapp.com/attachments/807245844213530695/860193553379885126/Banner_flesh.jpg");   
 
-            message.channel.send(embed);
-        })
-        .catch ((error) =>{
-            message.channel.send('Er was een error bij het inladen van de server');
-            throw error;
+            message.channel.send(embed)
         })
     }
 }
