@@ -9,7 +9,7 @@
 <div size='20px'>Koop dan de bot in de fleshnetwerk discord server!</div>
 <div size='20px'>https://discord.gg/Gkhn75KYXb</div>
 <div size='20px'>Als je de server bent gejoined maak dan even een ticket aan via !ticket</div>
-<div size='20px'>Voor alle commands [klik](https://github.com/xSvxnn/FleshNetwerk/blob/main/COMMANDS.md) hier</div>
+<div size='20px'>Voor alle commands klik dan op deze link https://github.com/xSvxnn/FleshNetwerk/blob/main/COMMANDS.md</div>
 
 ## Supported Versions
 
