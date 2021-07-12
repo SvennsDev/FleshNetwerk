@@ -10,6 +10,7 @@
 <div size='20px'>https://discord.gg/Gkhn75KYXb</div>
 <div size='20px'>Als je de server bent gejoined maak dan even een ticket aan via !ticket</div>
 <div size='20px'>Voor alle commands klik dan op deze link https://github.com/xSvxnn/FleshNetwerk/blob/main/COMMANDS.md</div>
+<div size='20px'>Voor alle benodigheden klik dan op deze link https://github.com/xSvxnn/FleshNetwerk/blob/main/NEEDED.md</div>
 
 ## Supported Versions
 
